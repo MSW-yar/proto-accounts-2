@@ -21,7 +21,16 @@ import './style.scss';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      // eslint-disable-next-line react/no-unused-state
+      loggedIn: false
+    };
+
     if (localStorage.getItem('users') === undefined) { localStorage.setItem('users', JSON.stringify([])); }
+  }
+
+  handlelogstate() {
+    this.setState({ loggedIn: !this.state.loggedIn});
   }
 
   render() {

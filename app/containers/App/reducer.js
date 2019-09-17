@@ -65,9 +65,7 @@ function appReducer(state = initialState, action) {
       const { item, price, shop } = action;
       const projectList = state.projects;
       projectList
-        .find(project => {
-          return action.projectTitle === project.title;
-        })
+        .find(project => action.projectTitle === project.title)
         .logs.push({
           item,
           price,

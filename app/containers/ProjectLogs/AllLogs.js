@@ -23,6 +23,7 @@ class AllLogs extends Component {
 
   //   ============= Filter button ============= //
 
+  // eslint-disable-next-line react/sort-comp
   handleProjectFilter = e => {
     this.setState({
       projectTitle: e,
@@ -95,7 +96,6 @@ class AllLogs extends Component {
       });
     }
   };
-
   //  ================================ //
 
   render() {

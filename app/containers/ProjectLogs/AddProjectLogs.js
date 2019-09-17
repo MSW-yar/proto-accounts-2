@@ -1,3 +1,4 @@
+/* eslint-disable react/sort-comp */
 /* eslint-disable object-curly-newline */
 /* eslint-disable lines-between-class-members */
 /* eslint-disable react/destructuring-assignment */
